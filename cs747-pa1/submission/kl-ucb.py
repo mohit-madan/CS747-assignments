@@ -74,7 +74,7 @@ def main():
     regret=round(max_reward-cum_reward,2)
     ret_str=instance+", "+algorithm +", "+ str(random_seed)+", "+str(epsilon)+", "+str(horizon)+", "\
     +str(regret)+"\n"
-    save_file=open("outputData3.txt","a")
+    save_file=open("outputData.txt","a")
     save_file.write(ret_str)
     save_file.close()
 
