@@ -1,0 +1,5 @@
+References:
+1. https://www.geeksforgeeks.org/program-for-newton-raphson-method/
+2. http://incompleteideas.net/book/RLbook2018trimmed.pdf
+3. https://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf
+4. http://arxiv.org/pdf/1102.2490v5.pdf
