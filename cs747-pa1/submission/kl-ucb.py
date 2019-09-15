@@ -16,12 +16,14 @@ def newton_rhapson(p,q,time_instance,Na):
     count=0
     while abs(h)>=1e-9 and count<100:
     # while count<100:
+        pdb.set_trace()
         f=np.log(time_instance)/Na-p*np.log(p/q)-(1-p)*np.log((1-p)/(1-q))
         f1=-(q-p)/(q*(1.0-q))
         h=f/f1
         q=min(1-1e-7, max(q-h,p+1e-7))
         count+=1
         # print(h)
+
     # print(count)
     return q
 

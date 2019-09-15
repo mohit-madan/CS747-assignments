@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 complete_data = pd.read_csv('outputData.txt', delimiter=',', header=None, names=["instance", "algorithm", "seed", "epsilon", "horizon","regret"])
 df=pd.DataFrame(complete_data)
-file_instance="../instances/i-1.txt"
+file_instance="../instances/i-3.txt"
 x=df[df['instance']==file_instance]
 y=x[x['algorithm']==" round-robin"]
 count=0
@@ -19,7 +19,7 @@ plt.ylabel("Regret")
 plt.xlabel("Horizon")
 xs=np.array([50, 200,800, 3200, 12800, 51200, 204800])	
 
-plt.title("i-1: regret vs horizon")
+plt.title("i-3: regret vs horizon")
 plt.plot(xs,regret_mean, marker='o',label="round-robin")
 # plt.show()
 # pdb.set_trace()
@@ -44,7 +44,8 @@ for epsilon in 0.002, 0.02, 0.2:
 
 
 
-x=df[df['instance']=="file_instance"]
+
+x=df[df['instance']==file_instance]
 x=x[x['algorithm']==" ucb"]
 
 count=0
@@ -54,6 +55,7 @@ for horizon in 50, 200,800, 3200, 12800, 51200, 204800:
 	regret_mean[count]=np.mean(y['regret'].to_numpy())
 	count+=1
 plt.plot(xs,regret_mean, marker='x',label="ucb")	
+
 
 x=df[df['instance']==file_instance]
 x=x[x['algorithm']==" kl-ucb"]
