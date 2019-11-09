@@ -1,0 +1,3 @@
+PulP- https://pythonhosted.org/PuLP/CaseStudies/a_blending_problem.html
+Slides- https://www.cse.iitb.ac.in/~shivaram/teaching/cs747-a2019/resources/mdp-algorithms.pdf
+numpy- https://docs.scipy.org/doc/numpy/reference/generated/numpy.count_nonzero.html

@@ -110,7 +110,7 @@ def main():
         for s in range(S):
             print(repr(V[s])+"\t"+str(init_action[s]))
         
-        pdb.set_trace()
+        # pdb.set_trace()
 
 if __name__ == '__main__':
     main()

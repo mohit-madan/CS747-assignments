@@ -1,0 +1,17 @@
+1. For Sarsa withought kingsMoves or stochastic wind run:
+./evaluate.sh
+
+Plots will obtained at the end after running for 10 iterations
+
+2. For adding kings moves or stochastic wind to the windworld run:
+
+-- only kings moves
+./evaluate.sh kingsMoves
+
+-- only stochastic
+./evaluate.sh stochastic
+
+-- both kings moves and stochastic
+./evaluate.sh kingsMoves stochastic
+
+Both the plots will be plotted one after another i.e on closing the fist plot second one comes

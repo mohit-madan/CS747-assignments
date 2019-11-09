@@ -1,9 +1,18 @@
 mdp-family.txt
 
-1. 4 states with 2 actions
-2. Deterministic actions are chosen so that only rewards are required to be varied in order to satisfy the condition. Therefore, for action-0 state does not change and for action-1 it goes to next state i.e S_0 --> S_1; S_3 --> S_0.
+1. 3 states with 2 actions
 
-3. Rewards of action-0 or set higher than action-1 for each state so that state does not change for low discount factors.
+2. Deterministic actions are chosen so that only rewards are required to be varied in order to satisfy the condition.
+3. For action-0 state does not change and for action-1 it goes to states as follows - S_0 --> S_1;S_1 --> S_0;S_2 --> S_1
 
-4. Rewards for action-0 are set in the order S_0 < S_1 < S_2 < S_3 so that for higher discount factors action-1 is preferred for S_0, S_1 and S_2 as they can enter into the next state and get higher rewards in the future.
+4. Reward of staying in state 1 set high and leaving it is negative
 
+5. Reward of staying in state-0 and state-2 are lower than state-1. Therefore at high discount factors they will leave their state and move to state-1(state of high reward).
+
+Therefore policy changes as follows:
+
+Discount Factor 	State-0		State-1		State-2
+
+[0.01,0.39]		Stay		Stay		Stay
+[0.41,0.74]		Leave		Stay		Stay
+[0.76,0.99]		Leave		Stay		Leave
